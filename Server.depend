@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1638559021 source:/home/thavindu/Networking/Server/Server.c
+	"Server.h"
+	<stdio.h>
+	<stdlib.h>
+
+1638559063 /home/thavindu/Networking/Server/Server.h
+	<sys/socket.h>
+	<netinet/in.h>
+
