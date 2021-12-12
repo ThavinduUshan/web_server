@@ -56,9 +56,9 @@ void launch(struct Server *server){
             close(fdimg);
             close(new_socket);
     }
-    else if(strcmp(request.URI, "/thavindu.jpeg") == 0){
+    else if(strcmp(request.URI, "/cat.jpeg") == 0){
 
-            fdimg = open("thavindu.jpeg", O_RDONLY);
+            fdimg = open("cat.jpeg", O_RDONLY);
             sendfile(new_socket, fdimg, NULL, 45000);
             close(fdimg);
             close(new_socket);
