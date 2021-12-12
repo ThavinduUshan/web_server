@@ -20,7 +20,7 @@ struct Server server_constructor(int domain, int service, int protocol, u_long i
 
     if(server.socket == 0){
 
-        perror("Failed to Coonect to a Socket...\n");
+        perror("Failed to Connect to a Socket...\n");
         exit(1);
     }
 

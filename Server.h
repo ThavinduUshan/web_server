@@ -5,6 +5,8 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 
+//defining the Server
+
 struct Server{
 
     int domain;
@@ -21,6 +23,8 @@ struct Server{
     void (*launch)(struct Server *server);
 
 };
+
+//defining the Sever Constructor function
 
 struct Server server_constructor(int domain, int service, int protocol, u_long interface, int port, int backlog, void(*launch)(struct Server * server));
 
